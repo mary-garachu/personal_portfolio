@@ -1,0 +1,12 @@
+.navbar {
+    padding: 20px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    img {
+        height: 100px;
+        width: 100px;
+    }
+}
