@@ -8,7 +8,6 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <img src={Logo} alt= 'Mary' />
-        <p>garachu.muthoni@gmail.com</p>
     </div>
   )
 }

@@ -1,61 +1,111 @@
-.Header {
+.page-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../public/Assets/logo/hero1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  border-radius: 50% 0;
+  
+
+  .navbar {
+    padding: 0 150px;
+    z-index: 10; /* To ensure the logo remains on top */
+    display: flex;
+    justify-content: flex-start; /* Aligns logo to the left */
+    align-items: center;
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+
+    @media (max-width: 1024px) {
+      padding: 0 50px;
+
+      img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
+
+      img {
+        height: 60px;
+        width: 60px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 10px;
+      
+      img {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+
+  .Header {
     display: flex;
     padding: 0 150px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: center;
-    align-content: center;
-    max-width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../public/Assets/logo/hero1.jpg);
-    height: 80vh;
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     margin-bottom: 30px;
     border-radius: 50% 0;
-  
+
     .Header-content {
       max-width: 45%;
-      color: white; 
-      z-index: 1; 
+      color: white;
+      z-index: 1;
+      margin-top: 25px;
+      font-family: "Nunito Sans", sans-serif;
       h1 {
         font-size: 60px;
         margin-bottom: 15px;
+        span {
+          color: orangered;
+        }
+        
       }
       h2 {
         font-size: 30px;
         margin-bottom: 20px;
+        span {
+          color: orangered;
+        }
       }
       p {
         font-size: 16px;
         line-height: 1.5;
       }
     }
-  
+
     .Header-image {
-      max-width: 45%; 
+      max-width: 45%;
     }
-  
+
     @media (max-width: 1024px) {
       padding: 0 50px;
       height: 70vh;
       border-radius: 40% 0;
-  
+
       .Header-content {
         max-width: 60%;
         h1 {
           font-size: 50px;
         }
         h2 {
-          font-size: 24px;
+          font-size: 34px;
         }
         p {
-          font-size: 14px;
+          font-size: 20px;
         }
       }
     }
-  
+
     @media (max-width: 768px) {
       flex-direction: column;
       padding: 0 20px;
@@ -63,7 +113,7 @@
       background-position: center;
       height: auto;
       border-radius: 30% 0;
-  
+
       .Header-content {
         max-width: 100%;
         margin-bottom: 20px;
@@ -77,25 +127,26 @@
           font-size: 14px;
         }
       }
-  
+
       .Header-image {
-        max-width: 100%; 
+        max-width: 100%;
       }
     }
-  
+
     @media (max-width: 480px) {
-        border-radius: 25% 0;
+      border-radius: 20% 0;
+
       .Header-content {
         h1 {
           font-size: 30px;
         }
         h2 {
-          font-size: 18px;
+          font-size: 20px;
         }
         p {
-          font-size: 12px;
+          font-size: 14px;
         }
       }
     }
   }
-  
+}

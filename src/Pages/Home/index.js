@@ -6,12 +6,15 @@ import Qualifications from '../../Components/Qualifiations';
 import Skills from '../../Components/Skills';
 import MyServices from '../../Components/Services';
 import Footer from '../../Components/Footer';
+import Navbar from '../../Components/Navbar';
 
 const Home = () => {
   return (
     <>
-      
+      <div className='page-wrapper'>
+      <Navbar />
       <Header />
+    </div>
       <Hero />
       <Skills />
       <MyServices />
