@@ -1,0 +1,64 @@
+.my-services {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 150px;
+    background-color: #f9f9f9;
+  
+    .service-item {
+      flex: 1 1 30%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+  
+      h4 {
+        font-size: 18px;
+        color: orangered;
+        margin-bottom: 10px;
+      }
+  
+      h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+  
+      p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+  
+      .service-image {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 30px 20px;
+  
+      .service-item {
+        margin-bottom: 20px;
+        .service-image img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+  

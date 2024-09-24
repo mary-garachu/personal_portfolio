@@ -15,9 +15,9 @@ const Hero = () => {
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, quam in venenatis volutpat, nulla lectus convallis dolor, non vehicula nunc erat in est. Integer vitae mi a justo ultrices placerat. Proin non magna nec mauris congue hendrerit. Aenean lobortis lectus at metus finibus. </p>
 
                 <div className='hero-contact-detail'>
-                    <label>Name</label>
+                    <h3>Name</h3>
                     <p> Ngarachu Mary Muthoni</p>
-                    <label>Email</label>
+                    <h3>Email</h3>
                     <p> garachu.muthoni@gmail.com </p>
 
                 </div>
