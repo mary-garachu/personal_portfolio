@@ -9,9 +9,9 @@
 
   .navbar {
     padding: 0 150px;
-    z-index: 10; /* To ensure the logo remains on top */
+    z-index: 10; 
     display: flex;
-    justify-content: flex-start; /* Aligns logo to the left */
+    justify-content: flex-start; 
     align-items: center;
 
     img {
@@ -71,14 +71,11 @@
         
       }
       h2 {
-        font-size: 30px;
+        font-size: 40px;
         margin-bottom: 20px;
-        span {
-          color: orangered;
-        }
       }
       p {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1.5;
       }
     }
@@ -95,13 +92,13 @@
       .Header-content {
         max-width: 60%;
         h1 {
-          font-size: 50px;
+          font-size: 54px;
         }
         h2 {
-          font-size: 34px;
+          font-size: 44px;
         }
         p {
-          font-size: 20px;
+          font-size: 30px;
         }
       }
     }
@@ -121,10 +118,10 @@
           font-size: 40px;
         }
         h2 {
-          font-size: 20px;
+          font-size: 34px;
         }
         p {
-          font-size: 14px;
+          font-size: 24px;
         }
       }
 
@@ -138,13 +135,13 @@
 
       .Header-content {
         h1 {
-          font-size: 30px;
+          font-size: 28px;
         }
         h2 {
-          font-size: 20px;
+          font-size: 24px;
         }
         p {
-          font-size: 14px;
+          font-size: 20px;
         }
       }
     }

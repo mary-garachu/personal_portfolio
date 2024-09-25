@@ -6,19 +6,19 @@ const servicesData = [
     subtitle: 'Web Development',
     title: 'Web Application',
     description: 'Building responsive and efficient web applications tailored to your business needs.',
-    image: 'https://via.placeholder.com/150' // Dummy image URL
+    image: '/Assets/logo/developer.png' 
   },
   {
-    subtitle: 'Mobile Development',
-    title: 'Mobile Application',
-    description: 'Creating native and cross-platform mobile apps with engaging user experiences.',
-    image: 'https://via.placeholder.com/150' // Dummy image URL
+    subtitle: 'Application Maintenance',
+    title: 'Technical Support',
+    description: 'Providing technical assistance and troubleshooting to ensure the smooth operation of software, systems, and networks.',
+    image: '/Assets/logo/customer-service.png'
   },
   {
     subtitle: 'UI/UX Design',
     title: 'Design Services',
     description: 'Crafting intuitive and user-friendly interfaces with a focus on user experience.',
-    image: 'https://via.placeholder.com/150' // Dummy image URL
+    image: '/Assets/logo/developer.png' 
   }
 ];
 

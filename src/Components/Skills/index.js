@@ -3,27 +3,27 @@ import './style.scss';
 
 const skillsData = [
   { category: 'Front-End Technologies', skills: [
-    { name: 'JavaScript', proficiency: 90 },
+    { name: 'JavaScript', proficiency: 85 },
     { name: 'HTML/(S)CSS', proficiency: 85 },
     { name: 'React JS', proficiency: 80 },
-    { name: 'WordPress', proficiency: 75 }
+    { name: 'WordPress', proficiency: 70 }
   ]},
   { category: 'Back-End Technologies', skills: [
-    { name: 'C', proficiency: 70 },
-    { name: 'Python', proficiency: 75 }
+    { name: 'C', proficiency: 60 },
+    { name: 'Python', proficiency: 65 }
   ]},
   { category: 'Tools & Technologies', skills: [
     { name: 'Agile', proficiency: 80 },
-    { name: 'Scrum', proficiency: 85 },
+    { name: 'Scrum', proficiency: 80 },
     { name: 'Git', proficiency: 90 },
-    { name: 'MySQL', proficiency: 75 }
+    { name: 'MySQL', proficiency: 65 }
   ]}
 ];
 
 const Skills = () => {
   return (
     <div className="skills-section">
-      <h2>Skills</h2>
+      <h2> Skills</h2>
       <div className="skills-container">
         {skillsData.map((category, index) => (
           <div key={index} className="skills-category">

@@ -39,7 +39,7 @@ const Qualifications = () => {
           </div>
         </div>
 
-        <div className="divider"></div> {/* Border divider between Experience and Education */}
+        <div className="divider"></div> 
 
         <div className="section">
           <h2>Education</h2>

@@ -24,16 +24,16 @@
       }
   
       h2 {
-        font-size: 24px;
+        font-size: 34px;
         color: #333;
-        margin-bottom: 15px;
       }
   
       p {
-        font-size: 16px;
+        font-size: 20px;
         color: #555;
         margin-bottom: 20px;
         line-height: 1.6;
+        z-index: 2;
       }
   
       .service-image {
@@ -48,6 +48,36 @@
         }
       }
     }
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      padding: 20px 50px;
+      gap: 30px;
+  
+      .service-item {
+        flex: 1 1 100%;
+        padding: 15px;
+  
+        h4 {
+          font-size: 30px;
+        }
+  
+        h2 {
+          font-size: 48px;
+        }
+  
+        p {
+          font-size: 30px;
+        }
+  
+        .service-image {
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+    }
   
     @media (max-width: 768px) {
       flex-direction: column;
@@ -58,6 +88,16 @@
         .service-image img {
           width: 80px;
           height: 80px;
+        }
+
+        h4 {
+          font-size: 20px;
+        }
+        h2 {
+          font-size: 34px;
+        }
+        p {
+          font-size: 24px;
         }
       }
     }

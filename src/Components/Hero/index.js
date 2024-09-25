@@ -12,8 +12,9 @@ const Hero = () => {
             </div>
             <div className='hero-contact-details'>
                 <h2> About </h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, quam in venenatis volutpat, nulla lectus convallis dolor, non vehicula nunc erat in est. Integer vitae mi a justo ultrices placerat. Proin non magna nec mauris congue hendrerit. Aenean lobortis lectus at metus finibus. </p>
-
+                <p> I am a front-end developer with 2 years of hands-on experience. Passionate about crafting
+beautiful and functional products with delightful user experiences. Committed to continuous
+learning and staying abreast of emerging technologies. I have completed over 10 projects in the past 2 years.</p>
                 <div className='hero-contact-detail'>
                     <h3>Name</h3>
                     <p> Ngarachu Mary Muthoni</p>
