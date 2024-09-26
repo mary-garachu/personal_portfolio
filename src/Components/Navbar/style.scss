@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    align-items: flex-start;
+
+    h1 {
+      color: #fff;
+      padding: 20px 20px;
+      font-family: "Oswald", sans-serif
+    }
+
+    @media (max-width: 1024px) {
+      padding: 0 50px;
+
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 10px;
+  
+    }
+  }

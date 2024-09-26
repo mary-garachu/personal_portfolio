@@ -3,7 +3,7 @@ import { toAbsoluteUrl } from '../../_Helpers/utils';
 import './style.scss';
 
 const Hero = () => {
-    const heroImage = toAbsoluteUrl('Assets/logo/hero3.jpg')
+    const heroImage = toAbsoluteUrl('Assets/logo/js1.jpg')
   return (
     <div className='hero'>
         <div className='hero-content'>
