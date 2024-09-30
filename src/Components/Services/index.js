@@ -24,18 +24,23 @@ const servicesData = [
 
 const MyServices = () => {
   return (
-    <div className="my-services">
-      {servicesData.map((service, index) => (
-        <div key={index} className="service-item">
-          <h4>{service.subtitle}</h4>
-          <h2>{service.title}</h2>
-          <p>{service.description}</p>
-          <div className="service-image">
-            <img src={service.image} alt={service.title} />
+    < div className='services'>
+      <div>
+        <h2 className='services-header'> Services </h2>
+      </div>
+      <div className="my-services">
+        {servicesData.map((service, index) => (
+          <div key={index} className="service-item">
+            <h4>{service.subtitle}</h4>
+            <h2>{service.title}</h2>
+            <p>{service.description}</p>
+            <div className="service-image">
+              <img src={service.image} alt={service.title} />
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </ div>
   );
 };
 
