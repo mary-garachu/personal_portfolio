@@ -1,21 +1,16 @@
 .services {
   background-color: #f9f9f9;
+  text-align: center;
   margin-top: -30px;
-  padding: 50px 150px;
-  margin-bottom: 80px;
-
-  .services-header {
-    text-align: center;
-    font-size: clamp(1.5rem, 2.5rem + 0.5rem, 2rem);
-    font-family: "Oswald", sans-serif;
-    padding-bottom: 30px;
-  }
+  padding-top: 50px;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(1.5rem, 2.5rem + 0.5rem, 2rem);
 
   .my-services {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    margin-bottom: 30px;
+    padding: 50px 150px;
 
     .service-item {
       flex: 1 1 30%;
@@ -71,6 +66,10 @@
       padding: 20px 50px;
       gap: 30px;
 
+      .services-header h2 {
+        font-size: clamp(1.5rem, 2.5rem, 3rem)
+      }
+
       .service-item {
         flex: 1 1 100%;
         padding: 15px;
@@ -103,6 +102,10 @@
       flex-direction: column;
       padding: 30px 20px;
 
+      .services-header h2 {
+        font-size: clamp(1.8rem, 2rem, 2rem);
+      }
+
       .service-item {
         margin-bottom: 20px;
 
@@ -133,6 +136,10 @@
     @media (max-width: 480px) {
       padding: 20px 10px;
 
+      .services-header h2 {
+        font-size: clamp(1rem, 1.5rem, 1.75rem); 
+      }
+
       .service-item {
         padding: 10px;
 
@@ -147,11 +154,11 @@
           font-size: clamp(0.875rem, 1rem, 1rem);
           margin-top: 70px;
         }
-        
+
         h2 {
           font-size: clamp(1rem, 1.5rem, 1.75rem);  
         }
-
+        
         p {
           font-size: clamp(0.875rem, 1rem, 1rem);
         }
