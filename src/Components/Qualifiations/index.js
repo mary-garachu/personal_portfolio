@@ -3,10 +3,11 @@ import './style.scss';
 
 const Qualifications = () => {
   return (
-    <>
+    <div>
       <div className='header'>
         <h2> Qualifications </h2>
       </div>
+
       <div className="qualifications">
         <div className="section">
           <h2>Experience</h2>
@@ -53,7 +54,7 @@ const Qualifications = () => {
           </div>
         </div>
       </div>
-    </>
+    </ div>
   );
 };
 

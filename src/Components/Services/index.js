@@ -25,9 +25,11 @@ const servicesData = [
 const MyServices = () => {
   return (
     < div className='services'>
-      <div>
-        <h2 className='services-header'> Services </h2>
+      
+      <div className='services-header'>
+        <h2 > Services </h2>
       </div>
+
       <div className="my-services">
         {servicesData.map((service, index) => (
           <div key={index} className="service-item">
