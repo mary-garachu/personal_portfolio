@@ -18,7 +18,7 @@ const servicesData = [
     subtitle: 'UI/UX Design',
     title: 'Design Services',
     description: 'Crafting intuitive and user-friendly interfaces with a focus on user experience.',
-    image: '/Assets/logo/developer.png' 
+    image: '/Assets/logo/responsive-design.png' 
   }
 ];
 
