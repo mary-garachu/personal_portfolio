@@ -53,6 +53,12 @@
       line-height: 1.4;
     }
 
+    h3::before {
+      content: "•";
+      margin-right: 10px;
+      color: black;
+    }
+
     ul {
       list-style-type: none;
       padding: 0;
