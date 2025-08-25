@@ -15,9 +15,9 @@ const servicesData = [
     image: '/Assets/logo/customer-service.png'
   },
   {
-    subtitle: 'UI/UX Design',
-    title: 'Design Services',
-    description: 'Crafting intuitive and user-friendly interfaces with a focus on user experience.',
+    subtitle: 'Website Optimization',
+    title: 'performance optimization',
+    description: 'Crafting intuitive and user-friendly interfaces making sure websites stay secure, fast, and updated',
     image: '/Assets/logo/responsive-design.png' 
   }
 ];
