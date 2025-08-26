@@ -16,7 +16,7 @@ const servicesData = [
   },
   {
     subtitle: 'Website Optimization',
-    title: 'performance optimization',
+    title: 'Performance Optimization',
     description: 'Crafting intuitive and user-friendly interfaces making sure websites stay secure, fast, and updated',
     image: '/Assets/logo/responsive-design.png' 
   }
