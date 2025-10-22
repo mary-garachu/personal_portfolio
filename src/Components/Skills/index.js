@@ -3,9 +3,9 @@ import './style.scss';
 
 const skillsData = [
   { category: 'Front-End Technologies', skills: [
-    { name: 'JavaScript', proficiency: 80 },
-    { name: 'HTML/(S)CSS', proficiency: 90 },
-    { name: 'React JS', proficiency: 80 },
+    { name: 'JavaScript', proficiency: 70 },
+    { name: 'HTML/(S)CSS', proficiency: 80 },
+    { name: 'React JS', proficiency: 70 },
     { name: 'WordPress', proficiency: 70 }
   ]},
   { category: 'Back-End Technologies', skills: [
@@ -15,8 +15,8 @@ const skillsData = [
   { category: 'Tools & Technologies', skills: [
     { name: 'Agile', proficiency: 80 },
     { name: 'Scrum', proficiency: 80 },
-    { name: 'Git', proficiency: 90 },
-    { name: 'MySQL', proficiency: 80 }
+    { name: 'Git', proficiency: 80 },
+    { name: 'MySQL', proficiency: 70 }
   ]}
 ];
 

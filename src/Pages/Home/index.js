@@ -7,6 +7,7 @@ import Skills from '../../Components/Skills';
 import MyServices from '../../Components/Services';
 import Footer from '../../Components/Footer';
 import Navbar from '../../Components/Navbar';
+import ProjectsSection from '../../Components/ProjectsSection';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
     </div>
       <Hero />
       <Skills />
+      <ProjectsSection/>
       <MyServices />
       <Qualifications />
       <Footer />
