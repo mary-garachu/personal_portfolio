@@ -37,14 +37,17 @@ Any static file server works (`npx serve`, VS Code Live Server, …).
 
 ## Deploy to Netlify
 
-`netlify.toml` already sets **publish directory `.`** and an **empty build
-command**, and it overrides whatever is set in the Netlify dashboard. So:
+`netlify.toml` sets **publish directory `.`** and a **no-op build command**
+(`echo …`), and both override whatever is set in the Netlify dashboard. So:
 
 1. Push to the branch Netlify deploys from (`master`). Done.
 
-If the site was set up for the old React app, it's still worth opening
-*Site configuration → Build & deploy* and clearing the old `npm run build` /
-`build` values so the dashboard doesn't contradict the file.
+Don't change the command to `""`: Netlify treats an empty command as unset
+and falls back to the dashboard's build command, which for this site was the
+old React app's `npm run build` (that's what broke the first deploy). It's
+also worth opening *Site configuration → Build & deploy* and clearing the old
+build command and `build` publish directory so the dashboard doesn't
+contradict the file.
 Without Git: drag the project folder onto the Netlify "Deploys" page.
 
 If the site ever moves off `mary-garachu.netlify.app`, update the URL in:
