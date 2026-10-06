@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# Mary Garachu — portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal site for Mary Muthoni Garachu, front-end developer.
+Live at <https://mary-garachu.netlify.app/>.
 
-## Available Scripts
+This is a plain static site: HTML, one CSS file and a three-line script.
+There is **no build step, no framework and no dependencies** — every page's
+content is in its HTML source, so search engines, link previews (LinkedIn,
+WhatsApp, X) and simple fetchers all see the real content.
 
-In the project directory, you can run:
+## Files
 
-### `npm start`
+```
+index.html                      Home: hero, work, route here, toolkit, contact
+projects/<slug>/index.html      Case studies: nala-trails-safaris, spirealm, ezra-enterprise
+404.html                        Netlify serves this for unknown URLs
+assets/css/site.css             All styles (colour tokens at the top)
+assets/js/site.js               Updates the footer year; the only script
+assets/img/                     Portrait, project screenshots (webp), og-*.jpg link-preview images
+favicon.svg
+robots.txt, sitemap.xml         Crawling + sitemap (home and all three case studies)
+netlify.toml                    Publish ".", no build command
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Run it locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The home page works by just opening `index.html` in a browser. Links between
+pages use folder URLs (`projects/spirealm/`), so to click around the whole site
+serve the folder instead:
 
-### `npm test`
+```sh
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Any static file server works (`npx serve`, VS Code Live Server, …).
 
-### `npm run build`
+## Deploy to Netlify
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`netlify.toml` already sets **publish directory `.`** and an **empty build
+command**, and it overrides whatever is set in the Netlify dashboard. So:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Push to the branch Netlify deploys from (`master`). Done.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If the site was set up for the old React app, it's still worth opening
+*Site configuration → Build & deploy* and clearing the old `npm run build` /
+`build` values so the dashboard doesn't contradict the file.
+Without Git: drag the project folder onto the Netlify "Deploys" page.
 
-### `npm run eject`
+If the site ever moves off `mary-garachu.netlify.app`, update the URL in:
+every page's `<link rel="canonical">`, `og:url`, `og:image` and
+`twitter:image` tags, the JSON-LD on `index.html`, `robots.txt` and
+`sitemap.xml`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Before publishing: TODO callouts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The case studies contain yellow-bordered boxes labelled
+**"TODO — fill in before publishing"** wherever a fact wasn't available.
+They're visible on the page on purpose. Replace each one with real content
+(or delete it), and replace the "To be confirmed" values in each page's
+meta block. To find them all:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+grep -n 'class="todo"' projects/*/index.html
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Nala Trails Safaris — `projects/nala-trails-safaris/index.html` (6)
 
-## Learn More
+1. **Meta block** — your role; start/end dates; confirm the stack. (WordPress
+   with a custom `nala-trails-safaris` theme on Understrap was read from the
+   live site's source on 6 Oct 2026.) Add plugins/services you set up.
+2. **The problem** — check against the client's real brief; add their goal.
+3. **What I built** — confirm which listed features you built (they were taken
+   from the live site/screenshot), and add what a screenshot can't show.
+4. **Decision: "Search before scroll"** — why the trip search sits in the hero.
+5. **Decision: "A custom theme rather than an off-the-shelf one"** — why.
+6. **Results** — launch date, enquiries/bookings, speed scores, client quote.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Spirealm — `projects/spirealm/index.html` (6)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Meta block** — your role; dates; the stack (couldn't be checked).
+   ⚠️ **spirealm.com did not resolve on 6 Oct 2026** (no such domain), so the
+   "Live site" link is dead. Update it or remove it.
+2. **The problem** — check against the real brief.
+3. **What I built** — confirm; list the About/Services/Contact pages, forms etc.
+4. **Decision: "Values ahead of services"** — why.
+5. **Decision: "One colour, one photo"** — why, or swap for another decision.
+6. **Results**.
 
-### Code Splitting
+### Ezra Enterprise — `projects/ezra-enterprise/index.html` (6)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Meta block** — your role; dates; the stack (couldn't be checked).
+   ⚠️ **ezraenterprise.co.ke did not resolve on 6 Oct 2026**, so the
+   "Live site" link is dead. Update it or remove it.
+2. **The problem** — check against the real brief.
+3. **What I built** — confirm; list Subsidiaries/Projects/CSR/News pages etc.
+4. **Decision: "Sectors as the opening structure"** — why the carousel is by sector.
+5. **Decision: "Subsidiaries as a top-level section"** — why.
+6. **Results**.
 
-### Analyzing the Bundle Size
+### Also worth a read
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Narrative copy on the home page** (hero intro, "Route here" intro and the
+  sentence under each timeline entry) was written from the facts in the old
+  site. The facts are unchanged, but the voice is new — make sure it sounds
+  like you.
+- The old About text said "2 years of experience" and "over 10 projects in the
+  past 2 years". It was written in 2024 and is now out of date, so it was left
+  out. Add updated numbers if you want them.
+- The case-study one-liners and "The problem" sections were inferred from the
+  type of client and what the sites show; that's why each has a TODO.
 
-### Making a Progressive Web App
+## Editing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Colours** are tokens at the top of `assets/css/site.css`
+  (`--court`, `--ink`, `--line`, `--paper`, `--lane`).
+- **Fonts**: Anybody (headings, a variable-width face) and Source Serif 4
+  (body), both from Google Fonts.
+- **Adding a project**: copy a folder in `projects/`, update its `<title>`,
+  description, canonical/OG tags and content; add a row to the Work section
+  of `index.html`; add its URL to `sitemap.xml`; add a 1200×630 `og-<slug>.jpg`
+  to `assets/img/` for link previews.
+- **Images**: use webp for page images, and keep the `width`/`height`
+  attributes so the layout doesn't jump while images load. Every image needs
+  descriptive `alt` text.
