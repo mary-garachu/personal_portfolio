@@ -1,9 +1,10 @@
-# Plain static site: no build step. Netlify serves this folder as-is.
-# The command is a deliberate no-op: Netlify treats an empty command as
-# "unset" and falls back to the build command saved in the dashboard.
+# Vite + React build. These settings override the Netlify dashboard.
 [build]
-  publish = "."
-  command = "echo 'No build step: static site'"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
 
 [[headers]]
   for = "/assets/*"
